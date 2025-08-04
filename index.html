@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEN CODE SERRR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Background Image -->
+  <div id="background-start"></div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <div class="start-content">
+      <h1>EthOS code escape</h1>
+      <p>🕹️ Move your mouse to dodge enemies</p>
+      <p>❤️ Collect hearts to survive longer</p>
+      <button id="start-btn" class="btn">Start Game</button>
+
+      <!-- Credit line -->
+      <p class="credit">by: @luckerrss99</p>
+    </div>
+  </div>
+
+  <!-- Pause Menu -->
+  <div id="pause-menu">
+    <div>
+      <h1>Game Paused</h1>
+      <button id="resume" class="btn">Resume</button>
+      <button id="exit" class="btn">Exit</button>
+    </div>
+  </div>
+
+  <!-- HUD -->
+  <div id="lives">
+    <div id="hearts">
+        <img src="assets/heart.png" class="life" />
+        <img src="assets/heart.png" class="life" />
+        <img src="assets/heart.png" class="life" />
+    </div>
+    <button id="pause-btn">⏸</button>
+  </div>
+
+  <!-- Game Over Overlay -->
+  <div id="game-over">
+    <div>
+      <h1>Game Over!</h1>
+      <p id="final-score">Final Score: 0</p>
+      <p id="final-time">Time Survived: 0s</p>
+      <p id="best-time">Best Time: 0s</p>
+      <p id="best-score">Best Score: 0</p>
+      <button id="restart" class="btn">Restart</button>
+      <button id="exit-gameover" class="btn">Exit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
